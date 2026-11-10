@@ -1,0 +1,46 @@
+---
+import Hero from "../components/Hero.astro";
+import WorkResearch from "../components/WorkResearch.astro";
+import Thesis from "../components/Thesis.astro";
+import NextStep from "../components/NextStep.astro";
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="WeZ — creative work, independent research, and ideas in progress."
+		/>
+		<meta name="theme-color" content="#090a0b" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Uncial+Antiqua&display=swap"
+			rel="stylesheet"
+		/>
+		<title>WeZ — Creative Work &amp; Research</title>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+		<main id="main">
+			<Hero />
+			<WorkResearch />
+			<Thesis />
+			<NextStep />
+		</main>
+		<footer class="site-footer">
+			<a href="#top" aria-label="WeZ, back to top">WeZ<span aria-hidden="true">.</span></a>
+			<p>Creative work <span aria-hidden="true">+</span> research</p>
+			<p class="site-footer__credit">
+				Photo: <a href="https://commons.wikimedia.org/wiki/File:Cliffs_of_Moher,_Ireland_07.jpg">Cliffs of Moher, Ireland 07</a>
+				by <a href="https://commons.wikimedia.org/wiki/User:Holger_Uwe_Schmitt">Holger Uwe Schmitt</a>, via Wikimedia Commons.
+				Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Cropped and desaturated.
+			</p>
+		</footer>
+	</body>
+</html>
